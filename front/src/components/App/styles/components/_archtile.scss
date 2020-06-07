@@ -1,0 +1,74 @@
+@import "../abstracts/variables";
+
+$icon-size-xs: 15rem;
+$icon-size-md: 20rem;
+$image-size-xs: 10rem;
+$image-size-md: 13rem;
+
+.archtile {
+  background-color: $white;
+  width: 32rem;
+  margin: 10rem 3rem 5rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem 2rem 0;
+  position: relative;
+
+  @media screen and (min-width: $width-md) {
+    height: 40rem;
+    width: 33rem;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    width: $icon-size-xs;
+    height: $icon-size-xs;
+    background-color: $white;
+    position: absolute;
+    top: -7.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $width-md) {
+      width: $icon-size-md;
+      height: $icon-size-md;
+    }
+  }
+
+  &__img {
+    margin-top: 3rem;
+    height: $image-size-xs;
+    width: $image-size-xs;
+
+    @media screen and (min-width: $width-md) {
+      width: $image-size-md;
+      height: $image-size-md;
+    }
+  }
+
+  &__title {
+    margin: 3rem 0 0;
+    font-size: 2rem;
+    z-index: 1;
+    text-align: center;
+    @media screen and (min-width: $width-lg) {
+      margin: 6rem 0 0;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__text {
+    color: $silver;
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.4rem;
+    z-index: 1;
+  }
+}

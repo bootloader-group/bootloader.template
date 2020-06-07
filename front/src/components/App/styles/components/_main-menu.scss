@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+
+.main-menu {
+    width: 100%;
+
+    &--home {
+        background-color: $light-cyan;
+    }
+
+    &__container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        max-width: $width-lg;
+        margin: 0 auto;
+    }
+
+    &__item {
+        width: 100%;
+        max-width: 18rem;
+        flex-basis: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+    }
+
+    &__link {
+        height: 100%;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: 'Varela Round';
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}

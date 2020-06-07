@@ -1,0 +1,53 @@
+@import "../abstracts/variables";
+
+.budget-item {
+    $root: &;
+    background: $light-cyan;
+    width: 30rem;
+    margin: 1rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+
+    &__image-container {
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        max-height: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        height: 5rem;
+        color: $night-rider;
+        font-family: 'Varela Round';
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-align: center;
+    }
+
+    &__cost {
+        color: $vivid-red;
+    }
+    &__price-part {
+        color: $moderate-green;
+    }
+    &__cost,
+    &__price-container {
+        font-family: 'Varela Round';
+        font-size: 3.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        margin: 2rem auto;
+    }
+}

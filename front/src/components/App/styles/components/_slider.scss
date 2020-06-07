@@ -1,0 +1,87 @@
+@import "../abstracts/variables";
+
+.slide {
+    width: 100%;
+    position: relative;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__caption {
+        min-height: 10rem;
+        background: $moderate-green;
+        font-family: 'Varela Round';
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        padding: 2rem 2rem 4rem;
+        color: $white;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 1rem auto 2rem;
+    }
+
+    &__description {
+        font-family: 'Roboto';
+        line-height: 2.5rem;
+    }
+}
+
+.slider {
+    width: 100%;
+    max-width: $width-lg;
+    margin: 0 auto;
+    position: relative;
+
+    &__nav {
+        width: 100%;
+        height: 5rem;
+        background: $vivid-red;
+        border-top: $nav-border;
+        border-bottom: $nav-border;
+        position: relative;
+        z-index: 10;
+        @media screen and (min-width: $width-lg) {
+            background: transparent;
+            height: 0;
+            border: 0;
+        }
+
+        &-item {
+            width: 5rem;
+            height: 4.8rem;
+            position: absolute;
+            top: 0;
+            background: $vivid-red;
+            border-bottom: $nav-border;
+            @media screen and (min-width: $width-lg) {
+                top: 30rem;
+                width: 10rem;
+                height: 10rem;
+                font-size: 3rem;
+                border-top: $nav-border;
+            }
+
+            &--left {
+                border-right: $nav-border;
+                left: 0;
+            }
+            &--right {
+                border-left: $nav-border;
+                right: 0;
+            }
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,513 @@
+@import "../abstracts/variables";
+
+// --- Components variables ---
+
+$table-offset-horizontal: 1.5rem;
+$table-width-min-sm-title: 20rem;
+$table-width-min-sm-number: 20rem;
+$table-width-min-sm-strip: 20rem;
+$table-width-min-sm-year: 8rem;
+$table-width-min-sm-total-number: 12rem;
+$table-width-min-sm-strip-small: 25rem;
+$table-width-min-sm-per-citizen: 15rem;
+$table-width-min-sm-row: (
+    $table-width-min-sm-title
+    + $table-width-min-sm-number
+    + $table-width-min-sm-strip
+    + (2 * $table-offset-horizontal)
+);
+$table-width-min-sm-row-full: 1230px;
+/* 
+
+    --- I have no fucking idea why it can't be dynamic var
+    --- It also can't be 123rem. Delegalise fucking CSS.
+
+ (
+    (2 * $table-width-min-sm-title)
+        + (2 * $table-width-min-sm-number)
+            + (2 * $table-width-min-sm-strip)
+                + (2 * $table-offset-horizontal)
+);
+// */
+
+.table {
+    $root: &;
+    font-size: 1.6rem;
+    table-layout: fixed;
+    width: 100%;
+    color: #333;
+    max-width: 100vw;
+    margin: 0 auto;
+    position: relative;
+    border-top: .4rem solid $grimm-grey;
+    overflow-x: auto;
+    display: block;
+
+    // Don't ask me why here's pixel breakpoint
+    // I wish I would know.. Var nor rem didn't work
+    @media screen and (min-width: 630px) {
+        max-width: $table-width-min-sm-row;
+    }
+    
+    @media screen and (min-width: $table-width-min-sm-row-full) {
+        margin: 4rem auto;
+        max-width: $table-width-min-sm-row-full;
+        overflow: visible;
+        &::before {
+            top: -4.4rem;
+        }
+        &::after {
+            bottom: -4rem;
+        }
+        &::before,
+        &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: .2rem;
+            height: 4rem;
+            background: $dark-gray;
+            left: (
+                $table-width-min-sm-title
+                + $table-width-min-sm-number
+                + $table-width-min-sm-strip
+                + ($table-offset-horizontal)
+            );
+        }
+    }
+
+    &__body {
+        width: 100%;
+    }
+
+    &__row:nth-child(2n) {
+        background: $green-gray;
+    }
+}
+
+.row {
+    $root: &;
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 4rem;
+    padding: 0 $table-offset-horizontal;
+    box-sizing: border-box;
+    width: 100%;
+    @media screen and (min-width: $table-width-min-sm-row-full) {
+        min-width: $table-width-min-sm-row;
+    }
+
+    &__cell {
+        display: flex;
+        box-sizing: border-box;
+        padding: .5rem;
+        align-items: center;
+        position: relative;
+
+        &--title {
+            min-width: $table-width-min-sm-title;
+        }
+    
+        &--number {
+            min-width: $table-width-min-sm-number;
+        }
+
+        &--small {
+            padding: .5rem 1.5rem;
+            flex-shrink: 0;
+        }
+
+        &--year {
+            min-width: $table-width-min-sm-year;
+            justify-content: flex-end;
+        }
+
+        &--total-number {
+            min-width: $table-width-min-sm-total-number;
+        }
+
+        &--strip-small {
+            flex-grow: 2;
+        }
+    
+        &--per-citizen {
+            min-width: $table-width-min-sm-per-citizen;
+        }
+
+        &--strip {
+            min-width: $table-width-min-sm-strip;
+            position: relative;
+            display: none;
+            padding: 0;
+
+            @media screen and (min-width: $table-width-min-sm-row-full) {
+                display: flex;
+            }
+
+            &::before {
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: .4rem;
+                background: $light-gray;
+                content: '';
+                z-index: 1;
+                right: 0;
+                left: 0;
+            }
+        }
+
+        &--strip-small {
+            min-width: #{$table-width-min-sm-strip};
+            position: relative;
+
+            @media screen and (min-width: $table-width-min-sm-row-full) {
+                display: flex;
+            }
+
+            &::before {
+                position: absolute;
+                display: block;
+                width: calc(100% - 3rem);
+                height: .4rem;
+                background: $light-gray;
+                content: '';
+                z-index: 1;
+                right: 1.5rem;
+                left: 1.5rem;
+            }
+        }
+    
+        &#{$root}__cell--right {
+            display: flex;
+            text-align: right;
+            
+            &#{$root}__cell--number,
+            &#{$root}__cell--title {
+                display: none;
+                @media screen and (min-width: $table-width-min-sm-row-full) {
+                    display: flex;
+                }
+            }
+
+            #{$root}__strip {
+                @media screen and (min-width: $table-width-min-sm-row-full) {
+                    background: $juicy-green;
+                }
+                &::after {
+                    @media screen and (min-width: $table-width-min-sm-row-full) {
+                        display: none;
+                    }
+                }
+                &::before {
+                    @media screen and (min-width: $table-width-min-sm-row-full) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    
+    &--negative #{$root}__cell--right {
+        #{$root}__strip {
+            @media screen and (min-width: $table-width-min-sm-row-full) {
+                width: 100%;
+                background: transparent;
+            }
+            &::before {
+                @media screen and (min-width: $table-width-min-sm-row-full) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #{$root}__strip {
+        position: absolute;
+        height: .4rem;
+        background: $juicy-green;
+        display: block;
+        z-index: 2;
+        @media screen and (min-width: $table-width-min-sm-row-full) {
+            width: 100%;
+            background: transparent;
+        }
+
+        &::before {
+            display: block;
+            content: '';
+            width: .5rem;
+            height: .5rem;
+            border: .2rem solid $juicy-green;
+            border-radius: 100%;
+            position: absolute;
+            top: -.25rem;
+            right: -.25rem;
+            background: $white;
+            @media screen and (min-width: $table-width-min-sm-row-full) {
+                display: none;
+            }
+        }
+
+        &::after {
+            display: block;
+            content: '';
+            width: .2rem;
+            height: 4rem;
+            background: $dark-gray;
+            position: absolute;
+            top: #{(-4rem / 2) + (.4rem / 2)};
+            left: -.2rem;
+            @media screen and (min-width: $table-width-min-sm-row-full) {
+                left: auto;
+                right: -.2rem;
+            }
+        }
+    }
+
+    #{$root}__strip-small {
+        position: absolute;
+        height: .4rem;
+        background: $juicy-green;
+        transition: 2s ease;
+        display: block;
+        z-index: 2;
+        left: 1.5rem;
+        right: 1.5rem;
+
+        &--right {
+            background: $flush-mahogany;
+            left: auto;
+        }
+    }
+
+    &--negative {
+        #{$root}__cell {
+            &--strip {
+                display: flex;
+            }
+            &--strip#{$root}__cell--right {
+                display: none;
+                @media screen and (min-width: $table-width-min-sm-row-full) {
+                    display: flex;
+                }
+            }
+        }
+
+        #{$root}__strip {
+            position: absolute;
+            height: .4rem;
+            background: $flush-mahogany;
+            display: block;
+            z-index: 2;
+            right: 0;
+            left: auto;
+
+            &::before {
+                display: block;
+                content: '';
+                width: .5rem;
+                height: .5rem;
+                border: .2rem solid $flush-mahogany;
+                border-radius: 100%;
+                position: absolute;
+                top: -.25rem;
+                left: -.25rem;
+                right: auto;
+                background: $white;
+            }
+
+            &::after {
+                display: block;
+                content: '';
+                width: .2rem;
+                height: 4rem;
+                background: $dark-gray;
+                position: absolute;
+                top: #{(-4rem / 2) + (.4rem / 2)};
+                right: -.2rem;
+                left: auto;
+            }
+        }
+    }
+}
+
+// Following block is separated because I'm too
+// afraid to modify this fucking crap shit above
+
+.table-container {
+    max-width: 100vw;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    margin: 0 auto;
+
+    @media screen and (min-width: 63rem) {
+        max-width: 63rem;
+    }
+}
+
+.table-small {
+    $root: &;
+    font-size: 1.6rem;
+    table-layout: fixed;
+    min-width: 100%;
+    color: #333;
+    margin: 0 auto;
+    position: relative;
+
+    &__head {
+        width: 100%;
+        display: block;
+    }
+
+    &__head-row {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    &__header-cell {
+        margin: .5rem;
+        padding: .5rem;
+        border-bottom: .4rem solid $flush-mahogany;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &#{$root}__header-cell--right {
+            text-align: right;
+        }
+
+        &--year {
+            min-width: $table-width-min-sm-year;
+            text-align: right;
+        }
+
+        &--total-number {
+            min-width: #{$table-width-min-sm-total-number
+            + $table-width-min-sm-strip-small};
+            flex-grow: 2;
+            text-align: left;
+        }
+
+        &--per-citizen {
+            min-width: $table-width-min-sm-per-citizen;
+        }
+    }
+
+    &__row:nth-child(2n) {
+        background: $green-gray;
+    }
+}
+
+.table-more-button {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    color: $dark-gray;
+    @media screen and (min-width: 63rem) {
+        max-width: 63rem;
+    }
+}
+
+.tables {
+    $root: &;
+    font-size: 1.6rem;
+
+    &__item-container {
+        width: 100%;
+        max-width: $table-width-min-sm-row-full;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $width-lg) {
+            flex-direction: row;
+
+            &#{$root}__item-container--big {
+                flex-direction: column;
+                #{$root}__item-header {
+                    order: 1;
+                    display: flex;
+                    align-items: center;
+                    &::before,
+                    &::after {
+                        display: block;
+                        content: '';
+                        background: url('/images/2-layers.png') center center no-repeat;
+                        height: .3rem;
+                        width: 14rem;
+                        margin: 0 5rem;
+                    }
+                    &::before {
+                        transform: scaleY(-1);
+                    }
+                }
+                
+                .table {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    &__item {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        @media screen and (min-width: $width-lg) {
+            margin: 3rem auto;
+            padding: 3rem 0;
+        }
+        &:nth-child(2n) {
+            @media screen and (min-width: $width-lg) {
+                background: $light-blue-grey;
+            }
+        }
+        
+        &:nth-child(2n+1) {
+            @media screen and (min-width: $width-lg) {
+                #{$root}__item-header {
+                    order: 2;
+                }
+
+                #{$root}__table {
+                    order: 1;
+                }
+            }
+        }
+
+        &-header {
+            text-align: center;
+            color: $night-rider;
+            font-family: 'Varela Round';
+            font-size: 4.8rem;
+            font-weight: 400;
+            line-height: 6rem;
+            margin: 2rem auto 3rem;
+            position: relative;
+            padding: 0 2rem;
+            @media screen and (min-width: $width-lg) {
+                &::after {
+                    text-align: left;
+                    display: block;
+                    content: url('/images/2-layers.png');
+                }
+            }
+        }
+
+
+        &:nth-child(2n+1) {
+            @media screen and (min-width: $width-lg) {
+                #{$root}__item-header {
+                    &::after {
+                        transform: scaleX(-1);
+                    }
+                }
+            }
+        }
+    }
+}

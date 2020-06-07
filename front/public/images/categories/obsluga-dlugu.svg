@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2480px" height="3508px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2480 3507"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:29.5238}
+    .fil0 {fill:none}
+    .fil1 {fill:#2B2A29;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Warstwa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <line class="fil0 str0" x1="441" y1="2159" x2="2011" y2= "2159" />
+  <polygon class="fil0 str0" points="581,1228 770,1228 770,2159 581,2159 "/>
+  <polygon class="fil0 str0" points="853,1092 1041,1092 1041,2157 853,2157 "/>
+  <polygon class="fil0 str0" points="1124,1274 1313,1274 1313,2156 1124,2156 "/>
+  <polygon class="fil0 str0" points="1396,1212 1585,1212 1585,2154 1396,2154 "/>
+  <polygon class="fil0 str0" points="1668,1544 1856,1544 1856,2154 1668,2154 "/>
+  <polyline class="fil0 str0" points="456,1879 944,1425 1232,1613 1471,1558 1762,1849 1953,1713 "/>
+  <path class="fil1" d="M1071 810c0,-22 5,-40 17,-56 11,-15 27,-23 48,-23 19,0 35,7 48,20 13,14 19,34 19,60 0,26 -6,46 -19,60 -13,14 -28,21 -47,21 -19,0 -34,-7 -46,-21 -12,-14 -18,-34 -18,-62zm65 -52c-9,0 -17,4 -23,12 -6,8 -9,23 -9,44 0,19 3,33 9,41 6,8 14,12 23,12 9,0 17,-4 23,-12 6,-8 9,-23 9,-44 0,-20 -3,-33 -9,-41 -6,-8 -14,-12 -23,-12zm0 296l167 -322 31 0 -166 322 -31 0zm132 -83c0,-22 5,-40 16,-56 11,-15 27,-23 48,-23 19,0 35,7 48,20 13,14 19,34 19,60 0,26 -6,46 -19,60 -13,14 -29,21 -47,21 -18,0 -34,-7 -46,-21 -12,-14 -18,-35 -18,-62zm66 -52c-9,0 -17,4 -23,12 -6,8 -9,23 -9,44 0,19 3,33 9,41 6,8 14,12 23,12 10,0 17,-4 24,-12 6,-8 9,-23 9,-44 0,-20 -3,-33 -9,-41 -6,-8 -14,-12 -23,-12z"/>
+  <polygon class="fil0 str0" points="580,2273 741,2273 741,2536 580,2536 "/>
+  <polygon class="fil0 str0" points="803,2273 964,2273 964,2536 803,2536 "/>
+  <polygon class="fil0 str0" points="1025,2273 1187,2273 1187,2536 1025,2536 "/>
+  <polygon class="fil0 str0" points="1248,2273 1409,2273 1409,2536 1248,2536 "/>
+  <polygon class="fil0 str0" points="1471,2273 1632,2273 1632,2536 1471,2536 "/>
+  <polygon class="fil0 str0" points="1693,2273 1855,2273 1855,2536 1693,2536 "/>
+ </g>
+</svg>

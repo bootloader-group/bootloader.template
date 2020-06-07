@@ -1,0 +1,62 @@
+@import "../abstracts/variables";
+
+.news {
+    $root: &;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $width-lg) {
+        flex-direction: row;
+    }
+
+    &__column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @media screen and (min-width: $width-lg) {
+            margin: 0 2rem;
+            width: 50%;
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        @media screen and (min-width: $width-lg) {
+            float: right;
+        }
+    }
+
+    &__title {
+        margin: 4rem 0;
+        font-size: 3.8rem;
+        font-family: 'Varela Round';
+        position: relative;
+        &::after {
+            content: url('/images/long_line.png');
+            bottom: -3rem;
+            left: 0;
+            position: absolute;
+        }
+    }
+
+    &__paragraph {
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+        color: $red-grey;
+        font-family: 'Varela Round';
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        max-width: 50rem;
+        text-align: justify;
+        @media screen and (min-width: $width-lg) {
+            text-align: unset;
+            padding: unset;
+        }
+    }
+}
