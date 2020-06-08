@@ -2,18 +2,16 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
 } from "react-router-dom";
-import Wrapper from './components/App';
+import Wrapper from './components/wrapper/wrapper';
+import Navigation from './components/navigation/navigation';
 
 function App() {
   return (
     <Wrapper>
       <Router>
+        <Navigation></Navigation>
         <Switch>
-          <Route exact path="/">
-            Henlo
-          </Route>
         </Switch>
       </Router>
     </Wrapper>
