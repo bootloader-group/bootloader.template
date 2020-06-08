@@ -1,0 +1,31 @@
+{
+    "username": "Szmyco",
+    "avatar_url": "https://i.imgur.com/4M34hi2.png",
+    "embeds": [
+      {
+        "author": {
+          "name": "Szmyca",
+          "url": "https://www.reddit.com/r/cats/",
+          "icon_url": "https://i.imgur.com/R66g1Pe.jpg"
+        },
+        "title": "pracownia-oto",
+        "url": "https://pracownia-oto.pl",
+        "description": "Szmyca zbudował coś na incie!",
+        "color": 15258703,
+        "fields": [
+            {
+              "name": "Front URL:",
+              "value": "[http://pracownia-oto.int.bootloader.group/](http://pracownia-oto.int.bootloader.group/)"
+            },
+            {
+              "name": "Panel URL:",
+              "value": "[http://panel.pracownia-oto.int.bootloader.group/wp/wp-login.php](http://panel.pracownia-oto.int.bootloader.group/wp/wp-login.php)"
+            },
+            {
+              "name": "Swagger.json",
+              "value": "Jeszcze nie ma :("
+            }
+        ]
+      }
+    ]
+  }
