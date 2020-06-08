@@ -1,15 +1,33 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 const Navigation = () => {
     return (
-        <header>
+        <header className="bootloader-menu">
             <div className="container">
-                <ul>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/contact">Contact</Link>
+                <ul className="bootloader-menu__list">
+                    <NavLink 
+                        exact
+                        className="bootloader-menu__list-item" 
+                        to="/"
+                        activeClassName="bootloader-menu__list-item--active">
+                        Home
+                    </NavLink>
+                    <NavLink 
+                        exact
+                        className="bootloader-menu__list-item" 
+                        to="/about"
+                        activeClassName="bootloader-menu__list-item--active">
+                        About
+                    </NavLink>
+                    <NavLink 
+                        exact
+                        className="bootloader-menu__list-item" 
+                        to="/contact"
+                        activeClassName="bootloader-menu__list-item--active">
+                        Contact
+                    </NavLink>
                 </ul>
             </div>
         </header>

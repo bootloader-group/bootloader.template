@@ -1,0 +1,14 @@
+.bootloader-menu {
+    padding: 1rem 0;
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    &__list-item {
+        margin: 0 1rem;
+        &--active {
+            color: cyan;
+        }
+    }
+}
