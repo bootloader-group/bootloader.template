@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -d "@hook-payload.json"  -H "Content-Type: application/json" -X POST https://discordapp.com/api/webhooks/717136749368967228/q9Pxqhx_df_Nfl1-6qOwR8KfwYnu30GFI0p7DdOfdlZqfVug0Adsv59At4GuhDDVlRW3

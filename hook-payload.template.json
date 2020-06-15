@@ -1,0 +1,31 @@
+{
+    "username": "Szmyco",
+    "avatar_url": "https://i.imgur.com/4M34hi2.png",
+    "embeds": [
+      {
+        "author": {
+          "name": "Szmyco",
+          "url": "https://www.reddit.com/r/cats/",
+          "icon_url": "https://i.imgur.com/R66g1Pe.jpg"
+        },
+        "title": "<<<PROJECT_NAME>>>",
+        "url": "https://www.google.com/search?q=g%C3%B3wno&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjH_qj7pfHpAhWHAhAIHZcOBskQ_AUoAXoECAsQAw&biw=1071&bih=1285",
+        "description": "<<<MESSAGE>>>",
+        "color": 16777215,
+        "fields": [
+            {
+              "name": "Front URL:",
+              "value": "[<<<PROJECT_URL>>>](<<<PROJECT_URL>>>)"
+            },
+            {
+              "name": "Panel URL:",
+              "value": "[<<<PROJECT_URL>>>](<<<PROJECT_URL>>>)"
+            },
+            {
+              "name": "Swagger.json",
+              "value": "[Tutej](https://www.getpostman.com/collections/85406cfaed8425c24da8)"
+            }
+        ]
+      }
+    ]
+  }
