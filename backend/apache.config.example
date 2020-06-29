@@ -1,8 +1,0 @@
-<VirtualHost *:80>
-    DocumentRoot "path\to\project\backend\web"
-    ServerName umb-docker.localhost
-    <Directory "path\to\project\backend\web">
-        Options Indexes FollowSymLinks Includes ExecCGI
-        Require all granted
-    </Directory>
-</VirtualHost>

@@ -1,3 +1,37 @@
-install.sh
-deploy.sh
-hook-payload.json
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Plugins (keep - dirty hack)
+!web/app/plugins/advanced-custom-fields-pro
+!web/app/plugins/advanced-custom-fields-wpcli
+
+# Logs
+**.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+# Template configs
+config/nginx.conf
+config/apache.conf
+config/hook-payload.conf
+config/notify.conf
+config/install.sh
+config/deploy.sh
