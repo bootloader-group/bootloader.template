@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/app/themes/barebones/static/css/main.chunk.css",
+    "main.js": "/app/themes/barebones/static/js/main.chunk.js",
+    "main.js.map": "/app/themes/barebones/static/js/main.chunk.js.map",
+    "runtime-main.js": "/app/themes/barebones/static/js/bundle.js",
+    "runtime-main.js.map": "/app/themes/barebones/static/js/bundle.js.map",
+    "static/js/2.chunk.js": "/app/themes/barebones/static/js/2.chunk.js",
+    "static/js/2.chunk.js.map": "/app/themes/barebones/static/js/2.chunk.js.map",
+    "index.php": "/app/themes/barebones/index.php",
+    "precache-manifest.93782d8c64153e699640698d25862ac5.js": "/app/themes/barebones/precache-manifest.93782d8c64153e699640698d25862ac5.js",
+    "service-worker.js": "/app/themes/barebones/service-worker.js",
+    "static/css/main.chunk.css.map": "/app/themes/barebones/static/css/main.chunk.css.map",
+    "static/js/2.chunk.js.LICENSE.txt": "/app/themes/barebones/static/js/2.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/app/themes/barebones/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/js/2.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}
