@@ -1,18 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
+import ass from '../src/margot-robbie-ass.png'
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                    Edit <code>react-src/src/App.js</code> and save to reload.
+                    Welcome to Bootloader.template
                 </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-                    Learn React
-                </a>
+                <div>
+                    <img src={ass} alt="" className="main-image"/>
+                </div>
             </header>
         </div>
     );
