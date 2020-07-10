@@ -1,75 +1,8 @@
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
-  url('/fonts/Roboto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import "./style/base";
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Italic.woff2') format('woff2'),
-  url('/fonts/Roboto-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
+html {
+  font-size: 62.5%;
 }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-MediumItalic.woff2') format('woff2'),
-  url('/fonts/Roboto-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
-  url('/fonts/Roboto-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-BoldItalic.woff2') format('woff2'),
-  url('/fonts/Roboto-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Light.woff2') format('woff2'),
-  url('/fonts/Roboto-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
-  url('/fonts/Roboto-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-LightItalic.woff2') format('woff2'),
-  url('/fonts/Roboto-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
 
 .App {
   text-align: center;
@@ -78,6 +11,7 @@
 }
 
 .nav-list {
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -105,14 +39,16 @@
 }
 
 .main-image {
-  height: 50rem;
+  height: 80rem;
   margin: 5rem auto;
 }
 
 .goodbye-container {
+  height: 100vh;
   background-image: url("images/margot-robbie-ass.png");
   background-size: cover;
   h2 {
     color: whitesmoke;
+    font-size: 5rem;
   }
 }
