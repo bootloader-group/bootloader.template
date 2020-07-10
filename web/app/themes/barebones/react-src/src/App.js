@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import ass from '../src/margot-robbie-ass.png'
+import ass from './images/margot-robbie-ass.png'
 import {
     BrowserRouter as Router,
     Switch,
@@ -55,7 +55,7 @@ function About() {
 function Users() {
     return (
         <div className="goodbye-container">
-            <h2 className="App-header">We hope you enjoyed your visit :) Goodbye!</h2>;
+            <h2 className="App-header">We hope you enjoyed your faptastic visit :) Goodbye!</h2>;
         </div>
     )
 };
