@@ -1,0 +1,20 @@
+{
+  "files": {
+    "static/js/0.chunk.js": "/app/themes/bootloader-theme/static/js/0.chunk.js",
+    "static/js/0.chunk.js.map": "/app/themes/bootloader-theme/static/js/0.chunk.js.map",
+    "main.css": "/app/themes/bootloader-theme/static/css/main.chunk.css",
+    "main.js": "/app/themes/bootloader-theme/static/js/main.chunk.js",
+    "main.css.map": "/app/themes/bootloader-theme/static/css/main.chunk.css.map",
+    "main.js.map": "/app/themes/bootloader-theme/static/js/main.chunk.js.map",
+    "runtime-main.js": "/app/themes/bootloader-theme/static/js/bundle.js",
+    "runtime-main.js.map": "/app/themes/bootloader-theme/static/js/bundle.js.map",
+    "index.php": "/app/themes/bootloader-theme/index.php",
+    "static/media/margot-robbie-ass.png": "/app/themes/bootloader-theme/static/media/margot-robbie-ass.417241b9.png"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/js/0.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}
