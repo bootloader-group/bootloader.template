@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+menu, ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(/app/themes/bootloader-theme/static/media/Roboto-Regular.bde1ca6a.woff2) format("woff2"), url(/app/themes/bootloader-theme/static/media/Roboto-Regular.d60c6fd1.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(/app/themes/bootloader-theme/static/media/Roboto-Italic.7b1a8d39.woff2) format("woff2"), url(/app/themes/bootloader-theme/static/media/Roboto-Italic.5da3fb60.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(/app/themes/bootloader-theme/static/media/Roboto-MediumItalic.075a66d5.woff2) format("woff2"), url(/app/themes/bootloader-theme/static/media/Roboto-MediumItalic.00db9441.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(/app/themes/bootloader-theme/static/media/Roboto-Medium.77c6e160.woff2) format("woff2"), url(/app/themes/bootloader-theme/static/media/Roboto-Medium.88ea4f87.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(/app/themes/bootloader-theme/static/media/Roboto-BoldItalic.9e30f60b.woff2) format("woff2"), url(/app/themes/bootloader-theme/static/media/Roboto-BoldItalic.bec74a76.woff) format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(/app/themes/bootloader-theme/static/media/Roboto-Light.50db936a.woff2) format("woff2"), url(/app/themes/bootloader-theme/static/media/Roboto-Light.f27e2017.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/Roboto-LightItalic.woff2") format("woff2"), url("/fonts/Roboto-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+
+html {
+  font-size: 62.5%; }
+
+.App {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: lighter; }
+
+.nav-list {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #282c34;
+  height: 5rem; }
+
+.App-header {
+  min-height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black; }
+
+.App-link {
+  list-style-type: none; }
+  .App-link a {
+    color: white;
+    text-decoration: none; }
+
+.main-image {
+  height: 80rem;
+  margin: 5rem auto; }
+
+.goodbye-container {
+  height: 100vh;
+  background-image: url(/app/themes/bootloader-theme/static/media/margot-robbie-ass.417241b9.png);
+  background-size: cover; }
+  .goodbye-container h2 {
+    color: whitesmoke;
+    font-size: 5rem; }
+
+
+/*# sourceMappingURL=main.chunk.css.map*/
