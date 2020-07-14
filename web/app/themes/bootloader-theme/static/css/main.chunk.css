@@ -149,5 +149,74 @@ html {
     color: whitesmoke;
     font-size: 5rem; }
 
+.header {
+  margin: 0 auto;
+  width: 37.5rem;
+  height: 5.1rem;
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+  letter-spacing: .4rem; }
+  @media (min-width: 1280px) {
+    .header {
+      width: 144rem;
+      height: 8rem; } }
+  .header__input-container {
+    display: none; }
+    @media (min-width: 1280px) {
+      .header__input-container {
+        width: 35rem;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 0.2rem solid #2b2b2b;
+        border-radius: 1rem; } }
+  .header__input {
+    display: none; }
+    @media (min-width: 1280px) {
+      .header__input {
+        display: block;
+        width: 24.7rem;
+        height: 3.1rem;
+        border: none;
+        padding-left: 2rem;
+        font-size: inherit;
+        letter-spacing: inherit; }
+        .header__input:focus {
+          outline: none; } }
+  .header__create-account {
+    margin-left: 40rem;
+    color: white;
+    font-weight: 900; }
+    .header__create-account:hover {
+      color: #fc9700; }
+    .header__create-account:active {
+      color: #674f2d; }
+  .header__login {
+    width: 22rem;
+    height: 3.1rem;
+    border: 0.2rem solid #2b2b2b;
+    border-radius: 1rem;
+    color: #fc9700;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    text-decoration: none; }
+    .header__login:hover {
+      background-color: #808080; }
+    .header__login:active {
+      background-color: #2b2b2b; }
+
+.fa {
+  color: black;
+  font-size: 2rem;
+  padding: 0 1rem; }
+
 
 /*# sourceMappingURL=main.chunk.css.map*/

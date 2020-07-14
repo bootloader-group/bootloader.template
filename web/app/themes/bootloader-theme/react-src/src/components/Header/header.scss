@@ -1,0 +1,90 @@
+@import "../../style/utils";
+
+.header {
+  margin: 0 auto;
+  width: $mobile-width;
+  height: $mobile-height;
+  background-color: $black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem;
+  letter-spacing: .4rem;
+
+  @media (min-width: $lg) {
+    width: $desktop-width;
+    height: $desktop-height;
+  }
+
+  &__input-container {
+    display: none;
+    @media (min-width: $lg) {
+      width: 35rem;
+      background-color: $white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: .2rem solid $black;
+      border-radius: $border-radius;
+    }
+  }
+
+  &__input {
+    display: none;
+    @media (min-width: $lg) {
+      display: block;
+      width: 24.7rem;
+      height: 3.1rem;
+      border: none;
+      padding-left: 2rem;
+      font-size: inherit;
+      letter-spacing: inherit;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__create-account {
+    margin-left: 40rem;
+    color: white;
+    font-weight: 900;
+
+    &:hover {
+      color: $yellow;
+    }
+
+    &:active {
+      color: $yellow-active;
+    }
+  }
+
+  &__login {
+    width: 22rem;
+    height: 3.1rem;
+    border: .2rem solid $black;
+    border-radius: $border-radius;
+    color: $yellow;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $grey;
+    }
+    &:active {
+      background-color: $black;
+    }
+  }
+}
+
+.fa {
+  color: black;
+  font-size: 2rem;
+  padding: 0 1rem;
+}

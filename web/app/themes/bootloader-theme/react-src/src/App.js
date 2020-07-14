@@ -7,6 +7,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import HomePage from "./pages/home";
 
 export default function App() {
     return (
@@ -32,18 +33,11 @@ export default function App() {
                     <Route path="/goodbye">
                         <Users/>
                     </Route>
-                    <Route path="/">
-                        <Home/>
-                    </Route>
+                    <Route path="/" component={HomePage}/>
                 </Switch>
             </div>
         </Router>
     );
-};
-
-function Home() {
-    return <h2 className="App-header">Welcome to Bootloader.template! We kindly recommend you to visit our pleasure
-        booth :)</h2>;
 };
 
 function About() {

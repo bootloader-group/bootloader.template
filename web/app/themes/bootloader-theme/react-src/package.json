@@ -37,5 +37,8 @@
         ]
     },
     "homepage": "/app/themes/bootloader-theme",
-    "browserLaunchTo": "http://template.localhost/wp"
+    "browserLaunchTo": "http://template.localhost/wp",
+    "devDependencies": {
+        "react-router-dom": "^5.2.0"
+    }
 }

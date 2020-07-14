@@ -11,6 +11,7 @@
 
 <script> wpThemeClient.start("ws", "127.0.0.1", "8090"); </script>
 
+<script src="https://use.fontawesome.com/132fc63066.js"></script>
 <meta charset="utf-8" />
     <link rel="shortcut icon" href="/app/themes/bootloader-theme/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,7 +40,7 @@
         Learn how to configure a non-root public URL by running `npm run wpbuild`.
     -->
     <title>Bootloader.template</title>
-<link href="/app/themes/bootloader-theme/static/css/main.chunk.css?42fe0b282179f2531446" rel="stylesheet"></head>
+<link href="/app/themes/bootloader-theme/static/css/main.chunk.css?7717801f310a8539908a" rel="stylesheet"></head>
     <body>
     <noscript>
         You need to enable JavaScript to run this app.
@@ -55,5 +56,5 @@
         To begin the development, run `npm run wpstart` or `yarn wpstart`.
         To create a production bundle, use `npm run wpbuild` or `yarn wpbuild`.
     -->
-    <script src="/app/themes/bootloader-theme/static/js/bundle.js?42fe0b282179f2531446"></script><script src="/app/themes/bootloader-theme/static/js/0.chunk.js?42fe0b282179f2531446"></script><script src="/app/themes/bootloader-theme/static/js/main.chunk.js?42fe0b282179f2531446"></script></body>
+    <script src="/app/themes/bootloader-theme/static/js/bundle.js?7717801f310a8539908a"></script><script src="/app/themes/bootloader-theme/static/js/0.chunk.js?7717801f310a8539908a"></script><script src="/app/themes/bootloader-theme/static/js/main.chunk.js?7717801f310a8539908a"></script></body>
 </html>
