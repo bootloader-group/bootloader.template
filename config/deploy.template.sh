@@ -5,7 +5,6 @@ composer install
 composer update
 cd /var/www/<<<ENV_NAME>>>>/<<<PROJECT_NAME>>>/config/
 ./install.sh
-./notify.sh
 cd /var/www/<<<ENV_NAME>>>>/<<<PROJECT_NAME>>>/web/app/themes/bootloader-theme/react-src/
 npm ci
 npm run wpbuild
